@@ -12,30 +12,30 @@ const Header = () => {
         <div className={styles.link}>
           {" "}
           <a href="#top">
-            <img src={Moon} className={styles.fullmoon} />
+            <img src={Moon} alt="" className={styles.fullmoon} />
             <p className={styles.top}>HOME</p>
           </a>
         </div>
         <br />
         <div className={styles.link}>
           <a href="#programming">
-            <img src={Moon} className={styles.halfleft} />
+            <img src={Moon} alt="" className={styles.halfleft} />
             <p className={styles.lefttext}>PROGRAMMING</p>
           </a>
           <a href="#artid">
-            <img src={Moon} className={styles.halfright} />{" "}
+            <img src={Moon} alt="" className={styles.halfright} />{" "}
             <p className={styles.righttext}>ARTWORK</p>
           </a>
         </div>
         <br />
         <div className={styles.link}>
           <a href="#aboutid">
-            <img src={Moon} className={styles.cresentleft} />
+            <img src={Moon} alt="" className={styles.cresentleft} />
             <p className={styles.bottomleft}>ABOUT</p>{" "}
           </a>
 
           <a href="#contact">
-            <img src={Moon} className={styles.cresentright} />{" "}
+            <img src={Moon} alt="" className={styles.cresentright} />{" "}
             <p className={styles.bottomright}>CONTACT</p>
           </a>
         </div>

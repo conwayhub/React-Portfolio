@@ -12,3 +12,21 @@
   font-size: 1em;
   letter-spacing: 0.05em;
 }
+
+.outsidelink {
+  text-decoration: none;
+  background-color: #ffd1dc;
+  padding: 0.3em;
+  margin-left: 5%;
+  border-radius: 12pt;
+  color: black;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(153, 153, 255, 0.8);
+}
+
+.card {
+  padding: 1em;
+  text-align: center;
+  border-radius: 12pt;
+}

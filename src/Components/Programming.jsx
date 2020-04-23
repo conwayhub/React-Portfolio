@@ -10,6 +10,7 @@ import Bfly3 from "../Images/fishiesquare.jpg";
 import Web1 from "../Images/firstwebsite.png";
 import Web2 from "../Images/secondwebsite.png";
 import Web3 from "../Images/thirdwebsite.png";
+import CV from "../Conway CV (1).pdf";
 
 class Programming extends React.Component {
   state = {
@@ -56,7 +57,11 @@ class Programming extends React.Component {
     return (
       <main className={styles.content}>
         <h1>PROGRAMMING</h1>
-        <p>Please feel free to take a look at my GITHUB and my CV</p>
+        <p>
+          Please feel free to take a look at my{" "}
+          <a href="https://github.com/conwayhub">Github</a> and my{" "}
+          <a href={CV}>CV</a>.
+        </p>
         <h2>PROJECTS</h2>
         <ul className={styles.projects}>
           {this.state.projects.map((project) => {

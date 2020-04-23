@@ -16,6 +16,7 @@ import Fact3 from "../Images/Facilitating.jpg";
 import Drag1 from "../Images/Drag.jpg";
 import Drag2 from "../Images/Horse.jpg";
 import Drag3 from "../Images/SoloEatMe7.jpg";
+import ArtCV from "../CorrectedConwayMcDermott2020.pdf";
 class Artwork extends React.Component {
   state = {
     projects: [
@@ -69,7 +70,10 @@ class Artwork extends React.Component {
     return (
       <main className={styles.content}>
         <h1>ARTS</h1>
-        <p>Please feel free to check out my CV</p>
+        <p>
+          If you'd like to know more about my freelance work, check out my
+          seperate <a href={ArtCV}>Arts CV.</a>{" "}
+        </p>
         <h2>PROJECTS</h2>
         <ul className={styles.projects}>
           {this.state.projects.map((project) => {
