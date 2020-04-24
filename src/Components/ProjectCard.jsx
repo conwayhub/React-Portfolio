@@ -35,21 +35,21 @@ const ProjectCard = (props) => {
       <br />
       {live === "" ? null : (
         <a href={live} className={styles.outsidelink}>
-          &ensp;WEBSITE&ensp;
+          WEBSITE
         </a>
       )}
       <br />
       <br />
       {repo1 === "" ? null : (
         <a href={repo1} className={styles.outsidelink}>
-          &ensp;GITHUB I&ensp;
+          GITHUB I
         </a>
       )}
       <br />
       <br />
       {repo2 === "" ? null : (
         <a href={repo2} className={styles.outsidelink}>
-          &ensp;GITHUB II&ensp;
+          GITHUB II
         </a>
       )}
     </li>

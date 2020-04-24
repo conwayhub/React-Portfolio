@@ -2,6 +2,7 @@
   display: flexbox;
   background-color: rgb(153, 153, 255, 0.8);
   margin: 5%;
+  width: 90%;
 }
 
 .content p {
@@ -54,11 +55,11 @@
 }
 
 .form input {
-  width: 30em;
+  width: 100%;
 }
 
 .form textarea {
-  width: 30em;
+  width: 100%;
 }
 
 button {

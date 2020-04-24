@@ -5,453 +5,914 @@
   src: local("Simplifica"), url("SIMPLIFICA Typeface.woff") format("woff");
 }
 
-.head {
-  display: flexbox;
-  text-align: center;
+@media screen and (min-width: 601px) {
+  .head {
+    display: flexbox;
+    text-align: center;
+  }
+
+  .name {
+    display: inline-block;
+    max-width: 600pt;
+    position: relative;
+    text-align: center;
+    font-family: "Simplifica", "Gill Sans", "Gill Sans MT", Calibri,
+      "Trebuchet MS", sans-serif;
+    font-size: 72pt;
+    font-weight: bold;
+    color: blue;
+    opacity: 0.9;
+    letter-spacing: 0.2em;
+  }
+  .name:after {
+    content: "CONWAY MCDERMOTT";
+    position: absolute;
+    left: 0.1em;
+    top: 0.07em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.6;
+  }
+
+  .cresentright {
+    position: relative;
+    margin-left: 100pt;
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      90% 20%,
+      83% 12%,
+      73% 6%,
+      56% 2%,
+      42% 4%,
+      31% 7%,
+      19% 15%,
+      11% 24%,
+      7% 38%,
+      7% 56%,
+      12% 73%,
+      22% 84%,
+      35% 97%,
+      45% 97%,
+      65% 97%,
+      76% 93%,
+      85% 86%,
+      95% 71%,
+      90% 75%,
+      82% 81%,
+      75% 84%,
+      66% 85%,
+      55% 84%,
+      46% 81%,
+      43% 77%,
+      38% 68%,
+      32% 58%,
+      31% 51%,
+      32% 43%,
+      35% 37%,
+      40% 27%,
+      45% 20%,
+      59% 14%,
+      73% 15%
+    );
+    clip-path: polygon(
+      90% 20%,
+      83% 12%,
+      73% 6%,
+      56% 2%,
+      42% 4%,
+      31% 7%,
+      19% 15%,
+      11% 24%,
+      7% 38%,
+      7% 56%,
+      12% 73%,
+      22% 84%,
+      35% 97%,
+      45% 97%,
+      65% 97%,
+      76% 93%,
+      85% 86%,
+      95% 71%,
+      90% 75%,
+      82% 81%,
+      75% 84%,
+      66% 85%,
+      55% 84%,
+      46% 81%,
+      43% 77%,
+      38% 68%,
+      32% 58%,
+      31% 51%,
+      32% 43%,
+      35% 37%,
+      40% 27%,
+      45% 20%,
+      59% 14%,
+      73% 15%
+    );
+
+    opacity: 0.6;
+  }
+
+  .cresentleft {
+    position: relative;
+    margin-right: 100pt;
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      3% 24%,
+      13% 10%,
+      23% 4%,
+      39% 1%,
+      51% 1%,
+      66% 4%,
+      73% 8%,
+      85% 18%,
+      91% 28%,
+      94% 39%,
+      93% 52%,
+      92% 63%,
+      87% 76%,
+      80% 81%,
+      66% 90%,
+      51% 95%,
+      35% 96%,
+      23% 91%,
+      10% 83%,
+      3% 67%,
+      15% 79%,
+      26% 84%,
+      34% 86%,
+      47% 87%,
+      60% 81%,
+      70% 70%,
+      75% 54%,
+      76% 39%,
+      69% 25%,
+      60% 16%,
+      50% 13%,
+      35% 10%,
+      25% 10%,
+      16% 14%
+    );
+    clip-path: polygon(
+      3% 24%,
+      13% 10%,
+      23% 4%,
+      39% 1%,
+      51% 1%,
+      66% 4%,
+      73% 8%,
+      85% 18%,
+      91% 28%,
+      94% 39%,
+      93% 52%,
+      92% 63%,
+      87% 76%,
+      80% 81%,
+      66% 90%,
+      51% 95%,
+      35% 96%,
+      23% 91%,
+      10% 83%,
+      3% 67%,
+      15% 79%,
+      26% 84%,
+      34% 86%,
+      47% 87%,
+      60% 81%,
+      70% 70%,
+      75% 54%,
+      76% 39%,
+      69% 25%,
+      60% 16%,
+      50% 13%,
+      35% 10%,
+      25% 10%,
+      16% 14%
+    );
+
+    opacity: 0.6;
+  }
+  .fullmoon {
+    position: relative;
+    height: 150pt;
+    width: 150pt;
+    border-radius: 50%;
+
+    opacity: 0.6;
+  }
+
+  .halfleft {
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      10% 19%,
+      18% 9%,
+      25% 5%,
+      31% 3%,
+      40% 1%,
+      49% 2%,
+      58% 2%,
+      68% 5%,
+      82% 11%,
+      87% 19%,
+      91% 29%,
+      94% 38%,
+      97% 49%,
+      95% 59%,
+      93% 71%,
+      89% 80%,
+      82% 85%,
+      75% 91%,
+      67% 94%,
+      59% 97%,
+      51% 97%,
+      42% 96%,
+      30% 92%,
+      21% 89%,
+      14% 85%,
+      9% 76%,
+      21% 83%,
+      34% 84%,
+      43% 80%,
+      49% 72%,
+      53% 61%,
+      53% 46%,
+      50% 33%,
+      44% 24%,
+      37% 20%,
+      27% 14%
+    );
+    clip-path: polygon(
+      10% 19%,
+      18% 9%,
+      25% 5%,
+      31% 3%,
+      40% 1%,
+      49% 2%,
+      58% 2%,
+      68% 5%,
+      82% 11%,
+      87% 19%,
+      91% 29%,
+      94% 38%,
+      97% 49%,
+      95% 59%,
+      93% 71%,
+      89% 80%,
+      82% 85%,
+      75% 91%,
+      67% 94%,
+      59% 97%,
+      51% 97%,
+      42% 96%,
+      30% 92%,
+      21% 89%,
+      14% 85%,
+      9% 76%,
+      21% 83%,
+      34% 84%,
+      43% 80%,
+      49% 72%,
+      53% 61%,
+      53% 46%,
+      50% 33%,
+      44% 24%,
+      37% 20%,
+      27% 14%
+    );
+
+    opacity: 0.6;
+  }
+
+  .halfright {
+    opacity: 0.6;
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      75% 9%,
+      64% 2%,
+      55% 1%,
+      46% 1%,
+      36% 4%,
+      29% 7%,
+      18% 12%,
+      12% 17%,
+      9% 25%,
+      6% 33%,
+      6% 41%,
+      5% 55%,
+      8% 65%,
+      13% 76%,
+      20% 85%,
+      29% 92%,
+      38% 95%,
+      47% 96%,
+      59% 97%,
+      69% 95%,
+      78% 90%,
+      68% 88%,
+      61% 82%,
+      57% 76%,
+      51% 68%,
+      49% 60%,
+      48% 48%,
+      49% 38%,
+      51% 27%,
+      57% 18%,
+      64% 11%
+    );
+    clip-path: polygon(
+      75% 9%,
+      64% 2%,
+      55% 1%,
+      46% 1%,
+      36% 4%,
+      29% 7%,
+      18% 12%,
+      12% 17%,
+      9% 25%,
+      6% 33%,
+      6% 41%,
+      5% 55%,
+      8% 65%,
+      13% 76%,
+      20% 85%,
+      29% 92%,
+      38% 95%,
+      47% 96%,
+      59% 97%,
+      69% 95%,
+      78% 90%,
+      68% 88%,
+      61% 82%,
+      57% 76%,
+      51% 68%,
+      49% 60%,
+      48% 48%,
+      49% 38%,
+      51% 27%,
+      57% 18%,
+      64% 11%
+    );
+  }
+
+  .link {
+    position: relative;
+    text-align: center;
+    max-width: 700pt;
+    display: inline-block;
+  }
+
+  .link p {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+  }
+  .lefttext {
+    position: absolute;
+    top: 50%;
+    left: -70%;
+  }
+
+  .righttext {
+    position: absolute;
+    left: 80%;
+  }
+
+  .bottomleft {
+    position: absolute;
+    left: -80%;
+  }
+
+  .bottomright {
+    position: absolute;
+    left: 95%;
+  }
+
+  p {
+    font-size: 25pt;
+    font-weight: bolder;
+    color: teal;
+    letter-spacing: 0.2em;
+
+    font-family: "Simplifica", "Gill Sans", "Gill Sans MT", Calibri,
+      "Trebuchet MS", sans-serif;
+  }
+
+  .top:hover:after {
+    content: "HOME";
+
+    position: absolute;
+    left: 0.07em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+
+  .bottomright:hover:after {
+    content: "CONTACT";
+
+    position: absolute;
+    left: 0.07em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+
+  .bottomleft:hover:after {
+    content: "ABOUT";
+
+    position: absolute;
+    right: 13.63em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+
+  .lefttext:hover:after {
+    content: "PROGRAMMING";
+
+    position: absolute;
+    right: 5.3em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+  .righttext:hover:after {
+    content: "ARTWORK";
+
+    position: absolute;
+    left: 0.07em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
 }
+@media screen and (max-width: 690px) {
+  .cresentright {
+    display: none;
+    position: relative;
+    margin-left: 100pt;
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      90% 20%,
+      83% 12%,
+      73% 6%,
+      56% 2%,
+      42% 4%,
+      31% 7%,
+      19% 15%,
+      11% 24%,
+      7% 38%,
+      7% 56%,
+      12% 73%,
+      22% 84%,
+      35% 97%,
+      45% 97%,
+      65% 97%,
+      76% 93%,
+      85% 86%,
+      95% 71%,
+      90% 75%,
+      82% 81%,
+      75% 84%,
+      66% 85%,
+      55% 84%,
+      46% 81%,
+      43% 77%,
+      38% 68%,
+      32% 58%,
+      31% 51%,
+      32% 43%,
+      35% 37%,
+      40% 27%,
+      45% 20%,
+      59% 14%,
+      73% 15%
+    );
+    clip-path: polygon(
+      90% 20%,
+      83% 12%,
+      73% 6%,
+      56% 2%,
+      42% 4%,
+      31% 7%,
+      19% 15%,
+      11% 24%,
+      7% 38%,
+      7% 56%,
+      12% 73%,
+      22% 84%,
+      35% 97%,
+      45% 97%,
+      65% 97%,
+      76% 93%,
+      85% 86%,
+      95% 71%,
+      90% 75%,
+      82% 81%,
+      75% 84%,
+      66% 85%,
+      55% 84%,
+      46% 81%,
+      43% 77%,
+      38% 68%,
+      32% 58%,
+      31% 51%,
+      32% 43%,
+      35% 37%,
+      40% 27%,
+      45% 20%,
+      59% 14%,
+      73% 15%
+    );
 
-.name {
-  display: inline-block;
-  max-width: 600pt;
-  position: relative;
-  text-align: center;
-  font-family: "Simplifica", "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
-  font-size: 72pt;
-  font-weight: bold;
-  color: blue;
-  opacity: 0.9;
-  letter-spacing: 0.2em;
-}
-.name:after {
-  content: "CONWAY MCDERMOTT";
-  position: absolute;
-  left: 0.1em;
-  top: 0.07em;
-  color: red;
-  font-weight: bold;
-  opacity: 0.6;
-}
+    opacity: 0.6;
+  }
 
-.cresentright {
-  position: relative;
-  margin-left: 100pt;
-  height: 150pt;
-  width: 150pt;
-  -webkit-clip-path: polygon(
-    90% 20%,
-    83% 12%,
-    73% 6%,
-    56% 2%,
-    42% 4%,
-    31% 7%,
-    19% 15%,
-    11% 24%,
-    7% 38%,
-    7% 56%,
-    12% 73%,
-    22% 84%,
-    35% 97%,
-    45% 97%,
-    65% 97%,
-    76% 93%,
-    85% 86%,
-    95% 71%,
-    90% 75%,
-    82% 81%,
-    75% 84%,
-    66% 85%,
-    55% 84%,
-    46% 81%,
-    43% 77%,
-    38% 68%,
-    32% 58%,
-    31% 51%,
-    32% 43%,
-    35% 37%,
-    40% 27%,
-    45% 20%,
-    59% 14%,
-    73% 15%
-  );
-  clip-path: polygon(
-    90% 20%,
-    83% 12%,
-    73% 6%,
-    56% 2%,
-    42% 4%,
-    31% 7%,
-    19% 15%,
-    11% 24%,
-    7% 38%,
-    7% 56%,
-    12% 73%,
-    22% 84%,
-    35% 97%,
-    45% 97%,
-    65% 97%,
-    76% 93%,
-    85% 86%,
-    95% 71%,
-    90% 75%,
-    82% 81%,
-    75% 84%,
-    66% 85%,
-    55% 84%,
-    46% 81%,
-    43% 77%,
-    38% 68%,
-    32% 58%,
-    31% 51%,
-    32% 43%,
-    35% 37%,
-    40% 27%,
-    45% 20%,
-    59% 14%,
-    73% 15%
-  );
+  .cresentleft {
+    display: none;
+    position: relative;
+    margin-right: 100pt;
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      3% 24%,
+      13% 10%,
+      23% 4%,
+      39% 1%,
+      51% 1%,
+      66% 4%,
+      73% 8%,
+      85% 18%,
+      91% 28%,
+      94% 39%,
+      93% 52%,
+      92% 63%,
+      87% 76%,
+      80% 81%,
+      66% 90%,
+      51% 95%,
+      35% 96%,
+      23% 91%,
+      10% 83%,
+      3% 67%,
+      15% 79%,
+      26% 84%,
+      34% 86%,
+      47% 87%,
+      60% 81%,
+      70% 70%,
+      75% 54%,
+      76% 39%,
+      69% 25%,
+      60% 16%,
+      50% 13%,
+      35% 10%,
+      25% 10%,
+      16% 14%
+    );
+    clip-path: polygon(
+      3% 24%,
+      13% 10%,
+      23% 4%,
+      39% 1%,
+      51% 1%,
+      66% 4%,
+      73% 8%,
+      85% 18%,
+      91% 28%,
+      94% 39%,
+      93% 52%,
+      92% 63%,
+      87% 76%,
+      80% 81%,
+      66% 90%,
+      51% 95%,
+      35% 96%,
+      23% 91%,
+      10% 83%,
+      3% 67%,
+      15% 79%,
+      26% 84%,
+      34% 86%,
+      47% 87%,
+      60% 81%,
+      70% 70%,
+      75% 54%,
+      76% 39%,
+      69% 25%,
+      60% 16%,
+      50% 13%,
+      35% 10%,
+      25% 10%,
+      16% 14%
+    );
 
-  opacity: 0.6;
-}
+    opacity: 0.6;
+  }
+  .fullmoon {
+    display: none;
+    position: relative;
+    height: 150pt;
+    width: 150pt;
+    border-radius: 50%;
 
-.cresentleft {
-  position: relative;
-  margin-right: 100pt;
-  height: 150pt;
-  width: 150pt;
-  -webkit-clip-path: polygon(
-    3% 24%,
-    13% 10%,
-    23% 4%,
-    39% 1%,
-    51% 1%,
-    66% 4%,
-    73% 8%,
-    85% 18%,
-    91% 28%,
-    94% 39%,
-    93% 52%,
-    92% 63%,
-    87% 76%,
-    80% 81%,
-    66% 90%,
-    51% 95%,
-    35% 96%,
-    23% 91%,
-    10% 83%,
-    3% 67%,
-    15% 79%,
-    26% 84%,
-    34% 86%,
-    47% 87%,
-    60% 81%,
-    70% 70%,
-    75% 54%,
-    76% 39%,
-    69% 25%,
-    60% 16%,
-    50% 13%,
-    35% 10%,
-    25% 10%,
-    16% 14%
-  );
-  clip-path: polygon(
-    3% 24%,
-    13% 10%,
-    23% 4%,
-    39% 1%,
-    51% 1%,
-    66% 4%,
-    73% 8%,
-    85% 18%,
-    91% 28%,
-    94% 39%,
-    93% 52%,
-    92% 63%,
-    87% 76%,
-    80% 81%,
-    66% 90%,
-    51% 95%,
-    35% 96%,
-    23% 91%,
-    10% 83%,
-    3% 67%,
-    15% 79%,
-    26% 84%,
-    34% 86%,
-    47% 87%,
-    60% 81%,
-    70% 70%,
-    75% 54%,
-    76% 39%,
-    69% 25%,
-    60% 16%,
-    50% 13%,
-    35% 10%,
-    25% 10%,
-    16% 14%
-  );
+    opacity: 0.6;
+  }
 
-  opacity: 0.6;
-}
-.fullmoon {
-  position: relative;
-  height: 150pt;
-  width: 150pt;
-  border-radius: 50%;
+  .halfleft {
+    display: none;
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      10% 19%,
+      18% 9%,
+      25% 5%,
+      31% 3%,
+      40% 1%,
+      49% 2%,
+      58% 2%,
+      68% 5%,
+      82% 11%,
+      87% 19%,
+      91% 29%,
+      94% 38%,
+      97% 49%,
+      95% 59%,
+      93% 71%,
+      89% 80%,
+      82% 85%,
+      75% 91%,
+      67% 94%,
+      59% 97%,
+      51% 97%,
+      42% 96%,
+      30% 92%,
+      21% 89%,
+      14% 85%,
+      9% 76%,
+      21% 83%,
+      34% 84%,
+      43% 80%,
+      49% 72%,
+      53% 61%,
+      53% 46%,
+      50% 33%,
+      44% 24%,
+      37% 20%,
+      27% 14%
+    );
+    clip-path: polygon(
+      10% 19%,
+      18% 9%,
+      25% 5%,
+      31% 3%,
+      40% 1%,
+      49% 2%,
+      58% 2%,
+      68% 5%,
+      82% 11%,
+      87% 19%,
+      91% 29%,
+      94% 38%,
+      97% 49%,
+      95% 59%,
+      93% 71%,
+      89% 80%,
+      82% 85%,
+      75% 91%,
+      67% 94%,
+      59% 97%,
+      51% 97%,
+      42% 96%,
+      30% 92%,
+      21% 89%,
+      14% 85%,
+      9% 76%,
+      21% 83%,
+      34% 84%,
+      43% 80%,
+      49% 72%,
+      53% 61%,
+      53% 46%,
+      50% 33%,
+      44% 24%,
+      37% 20%,
+      27% 14%
+    );
 
-  opacity: 0.6;
-}
+    opacity: 0.6;
+  }
 
-.halfleft {
-  height: 150pt;
-  width: 150pt;
-  -webkit-clip-path: polygon(
-    10% 19%,
-    18% 9%,
-    25% 5%,
-    31% 3%,
-    40% 1%,
-    49% 2%,
-    58% 2%,
-    68% 5%,
-    82% 11%,
-    87% 19%,
-    91% 29%,
-    94% 38%,
-    97% 49%,
-    95% 59%,
-    93% 71%,
-    89% 80%,
-    82% 85%,
-    75% 91%,
-    67% 94%,
-    59% 97%,
-    51% 97%,
-    42% 96%,
-    30% 92%,
-    21% 89%,
-    14% 85%,
-    9% 76%,
-    21% 83%,
-    34% 84%,
-    43% 80%,
-    49% 72%,
-    53% 61%,
-    53% 46%,
-    50% 33%,
-    44% 24%,
-    37% 20%,
-    27% 14%
-  );
-  clip-path: polygon(
-    10% 19%,
-    18% 9%,
-    25% 5%,
-    31% 3%,
-    40% 1%,
-    49% 2%,
-    58% 2%,
-    68% 5%,
-    82% 11%,
-    87% 19%,
-    91% 29%,
-    94% 38%,
-    97% 49%,
-    95% 59%,
-    93% 71%,
-    89% 80%,
-    82% 85%,
-    75% 91%,
-    67% 94%,
-    59% 97%,
-    51% 97%,
-    42% 96%,
-    30% 92%,
-    21% 89%,
-    14% 85%,
-    9% 76%,
-    21% 83%,
-    34% 84%,
-    43% 80%,
-    49% 72%,
-    53% 61%,
-    53% 46%,
-    50% 33%,
-    44% 24%,
-    37% 20%,
-    27% 14%
-  );
+  .halfright {
+    display: none;
+    opacity: 0.6;
+    height: 150pt;
+    width: 150pt;
+    -webkit-clip-path: polygon(
+      75% 9%,
+      64% 2%,
+      55% 1%,
+      46% 1%,
+      36% 4%,
+      29% 7%,
+      18% 12%,
+      12% 17%,
+      9% 25%,
+      6% 33%,
+      6% 41%,
+      5% 55%,
+      8% 65%,
+      13% 76%,
+      20% 85%,
+      29% 92%,
+      38% 95%,
+      47% 96%,
+      59% 97%,
+      69% 95%,
+      78% 90%,
+      68% 88%,
+      61% 82%,
+      57% 76%,
+      51% 68%,
+      49% 60%,
+      48% 48%,
+      49% 38%,
+      51% 27%,
+      57% 18%,
+      64% 11%
+    );
+    clip-path: polygon(
+      75% 9%,
+      64% 2%,
+      55% 1%,
+      46% 1%,
+      36% 4%,
+      29% 7%,
+      18% 12%,
+      12% 17%,
+      9% 25%,
+      6% 33%,
+      6% 41%,
+      5% 55%,
+      8% 65%,
+      13% 76%,
+      20% 85%,
+      29% 92%,
+      38% 95%,
+      47% 96%,
+      59% 97%,
+      69% 95%,
+      78% 90%,
+      68% 88%,
+      61% 82%,
+      57% 76%,
+      51% 68%,
+      49% 60%,
+      48% 48%,
+      49% 38%,
+      51% 27%,
+      57% 18%,
+      64% 11%
+    );
+  }
 
-  opacity: 0.6;
-}
+  .link {
+    display: none;
+    position: relative;
+    text-align: center;
+    max-width: 700pt;
+    display: inline-block;
+  }
 
-.halfright {
-  opacity: 0.6;
-  height: 150pt;
-  width: 150pt;
-  -webkit-clip-path: polygon(
-    75% 9%,
-    64% 2%,
-    55% 1%,
-    46% 1%,
-    36% 4%,
-    29% 7%,
-    18% 12%,
-    12% 17%,
-    9% 25%,
-    6% 33%,
-    6% 41%,
-    5% 55%,
-    8% 65%,
-    13% 76%,
-    20% 85%,
-    29% 92%,
-    38% 95%,
-    47% 96%,
-    59% 97%,
-    69% 95%,
-    78% 90%,
-    68% 88%,
-    61% 82%,
-    57% 76%,
-    51% 68%,
-    49% 60%,
-    48% 48%,
-    49% 38%,
-    51% 27%,
-    57% 18%,
-    64% 11%
-  );
-  clip-path: polygon(
-    75% 9%,
-    64% 2%,
-    55% 1%,
-    46% 1%,
-    36% 4%,
-    29% 7%,
-    18% 12%,
-    12% 17%,
-    9% 25%,
-    6% 33%,
-    6% 41%,
-    5% 55%,
-    8% 65%,
-    13% 76%,
-    20% 85%,
-    29% 92%,
-    38% 95%,
-    47% 96%,
-    59% 97%,
-    69% 95%,
-    78% 90%,
-    68% 88%,
-    61% 82%,
-    57% 76%,
-    51% 68%,
-    49% 60%,
-    48% 48%,
-    49% 38%,
-    51% 27%,
-    57% 18%,
-    64% 11%
-  );
-}
+  .link p {
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 30%;
+  }
+  .lefttext {
+    position: absolute;
+    top: 50%;
+    left: -70%;
+  }
 
-.link {
-  position: relative;
-  text-align: center;
-  max-width: 700pt;
-  display: inline-block;
-}
+  .righttext {
+    position: absolute;
+    left: 80%;
+  }
 
-.link p {
-  position: absolute;
-  top: 25%;
-  right: 30%;
-}
-.lefttext {
-  position: absolute;
-  top: 50%;
-  left: -70%;
-}
+  .bottomleft {
+    position: absolute;
+    left: -80%;
+  }
 
-.righttext {
-  position: absolute;
-  left: 80%;
-}
+  .bottomright {
+    position: absolute;
+    left: 95%;
+  }
 
-.bottomleft {
-  position: absolute;
-  left: -80%;
-}
+  p {
+    font-size: 25pt;
+    font-weight: bolder;
+    color: teal;
+    letter-spacing: 0.2em;
 
-.bottomright {
-  position: absolute;
-  left: 95%;
-}
+    font-family: "Simplifica", "Gill Sans", "Gill Sans MT", Calibri,
+      "Trebuchet MS", sans-serif;
+  }
 
-p {
-  font-size: 25pt;
-  font-weight: bolder;
-  color: teal;
-  letter-spacing: 0.2em;
+  .top:hover:after {
+    content: "HOME";
 
-  font-family: "Simplifica", "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
-}
+    position: absolute;
+    left: 0.07em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
 
-.top:hover:after {
-  content: "HOME";
+  .bottomright:hover:after {
+    content: "CONTACT";
 
-  position: absolute;
-  left: 0.07em;
-  top: 0.05em;
-  color: red;
-  font-weight: bold;
-  opacity: 0.9;
-}
+    position: absolute;
+    left: 0.07em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
 
-.bottomright:hover:after {
-  content: "CONTACT";
+  .bottomleft:hover:after {
+    content: "ABOUT";
 
-  position: absolute;
-  left: 0.07em;
-  top: 0.05em;
-  color: red;
-  font-weight: bold;
-  opacity: 0.9;
-}
+    position: absolute;
+    right: 13.63em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
 
-.bottomleft:hover:after {
-  content: "ABOUT";
+  .lefttext:hover:after {
+    content: "PROGRAMMING";
 
-  position: absolute;
-  right: 13.63em;
-  top: 0.05em;
-  color: red;
-  font-weight: bold;
-  opacity: 0.9;
-}
+    position: absolute;
+    right: 5.3em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.8;
+  }
 
-.lefttext:hover:after {
-  content: "PROGRAMMING";
+  .righttext:hover:after {
+    content: "ARTWORK";
 
-  position: absolute;
-  right: 5.3em;
-  top: 0.05em;
-  color: red;
-  font-weight: bold;
-  opacity: 0.8;
-}
+    position: absolute;
+    left: 0.07em;
+    top: 0.05em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.9;
+  }
 
-.righttext:hover:after {
-  content: "ARTWORK";
+  .head {
+    display: flexbox;
+    text-align: center;
+  }
 
-  position: absolute;
-  left: 0.07em;
-  top: 0.05em;
-  color: red;
-  font-weight: bold;
-  opacity: 0.9;
+  .name {
+    display: inline-block;
+    max-width: 600pt;
+    position: relative;
+    text-align: center;
+    font-family: "Simplifica", "Gill Sans", "Gill Sans MT", Calibri,
+      "Trebuchet MS", sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: blue;
+    opacity: 0.9;
+    letter-spacing: 0.2em;
+  }
+  .name:after {
+    content: "CONWAY MCDERMOTT";
+    position: absolute;
+    left: 0.1em;
+    top: 0.07em;
+    color: red;
+    font-weight: bold;
+    opacity: 0.6;
+  }
 }
